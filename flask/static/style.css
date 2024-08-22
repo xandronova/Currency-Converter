@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('/static/newwallpaper2.jpg');
+    background-size: cover;
+}
+.container .navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(189, 197, 183, 0.7);
+}
+.navbar .logo {
+    display:inline-block ;/*sadece logo tarafını ötelemek için*/
+    margin-left: 50px;
+    margin-top: 20px;
+    user-select: none;
+}
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #ff6e00;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.navbar ul li{
+    list-style: none;/*listenin başındaki noktaları kaldırdım.*/
+    display: inline-block;/*yanyana gelmesini sağlayan kod*/
+    margin: 0 10px;/*aralarını ayırdık*/
+    line-height: 80px;
+    user-select: none;
+
+}
+.baslikyazisi {
+    display: flex;/*kaynaktan bakıldı*/
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Yüksekliği belirlemek için kullaniyoruz */
+}
+
+.baslikyazisi b {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 500px;
+    color: #ff6e00;
+    user-select: none;
+
+}
+
+.donusturme {
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center;     /* Dikey ortalama */
+    color: #ff6e00;
+    padding-right: 20px;
+    user-select: none;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.donusturdugumuz {
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    padding-top: 15px;       /* Metni biraz aşağıya kaydır */
+    padding-left: 160px;
+    color: #ff6e00;
+    user-select: none;
+    font-size:25px ;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;/*kaynaktan bakıldı.*/
+    font-family: Roboto;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: #ff6e00;
+    border-radius: 2px;
+}
+.miktar{
+    color: #ff6e00;
+    font-size: 25px;
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    padding-left: 110px;
+    margin-top: 10px;
+    user-select: none;
+}
+/* Buton Stili Kaynaktan bakıldı.*/
+button {
+    width: 10%;
+    padding: 7px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff6e00;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #cc5200;
+    transform: translateY(0);
+}
+.footer {/*kaynaktan alındı.*/
+    position: fixed; /* Sabit pozisyon */
+    bottom: 0; /* Alt köşede konumlandırma */
+    left: 0; /* Sol köşede konumlandırma */
+    padding: 10px; /* İç boşluk */
+    color:#ffffff; /* Metin rengi */
+    font-size: 14px; /* Metin boyutu */
+    text-align: left; /* Metni sola hizalar */
+    width: 100%; /* Genişliği tam yapar */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+.Sonuc {
+    color: #ff6e00;
+    font-size: 25px;
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    padding-left: -150px;
+    margin-top: 10px;
+    user-select: none;
+}
+.navbar1 .abra1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    user-select: none;
+}
+.navbar1 .abra1 a {
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    user-select: none;
+    border: 2px solid #ff8000; /* Kutu çerçevesi rengi ve kalınlığı (4 satır kaynaktan bakıldı.)*/
+    padding: 10px; /* Yazının kutu içindeki boşluğu */
+    margin: 20px; /* Kutu ile diğer öğeler arasındaki boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlatmak için */}
+.social a{
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    letter-spacing: 2px;
+    border: 2px solid #ff8000; /* Kutu çerçevesi rengi ve kalınlığı (4 satır kaynaktan bakıldı.)*/
+    padding: 10px; /* Yazının kutu içindeki boşluğu */
+    margin: 20px; /* Kutu ile diğer öğeler arasındaki boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlatmak için */
+    color: #ffffff;}
+.no1{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    user-select: none;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Döviz Dönüştürme Uygulaması</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"class="active">Döviz Dönüştürme Uygulaması</a>
+          </div>
+          <ul>
+            <li><a href="/about">Hakkımda</a></li>
+            <li><a href="/nolist">Listede olmayan para birimleri</a></li>
+          </ul>
+        </div>
+     </div>
+    <div class="baslikyazisi">
+          <b><strong>Döviz Dönüştürme Uygulamasına Hoşgeldiniz!</strong></b>
+    </div>
+    <div class="donusturme">
+    <form action="/convert" method="post">
+        <label for="ilk_doviz">Dönüştürmek İstediğiniz Para Birimi:</label>
+        <select id="ilk_doviz" name="ilk_doviz" required>
+            <option value="TRY">Türk Lirası (TRY)</option>
+            <option value="USD">ABD Doları (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">İngiliz Sterlini (GBP)</option>
+            <option value="JPY">Japon Yeni (JPY)</option>
+            <option value="CHF">İsviçre Frangı (CHF)</option>
+            <option value="CAD">Kanada Doları (CAD)</option>
+            <option value="CNY">Çin Yuanı (CNY)</option>
+            <option value="INR">Hindistan Rupisi (INR)</option>
+        </select>
+      </div>
+        <div class="donusturdugumuz">
+        <label for="cevrilen_doviz">Hedef Para Birimi:</label>
+        <select id="cevrilen_doviz" name="cevrilen_doviz" required>
+            <option value="TRY">Türk Lirası (TRY)</option>
+            <option value="USD">ABD Doları (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">İngiliz Sterlini (GBP)</option>
+            <option value="JPY">Japon Yeni (JPY)</option>
+            <option value="CHF">İsviçre Frangı (CHF)</option>
+            <option value="CAD">Kanada Doları (CAD)</option>
+            <option value="CNY">Çin Yuanı (CNY)</option>
+            <option value="INR">Hindistan Rupisi (INR)</option>
+          </select>
+
+      </div>
+        <br>
+        <div class="miktar">
+        <a label for="miktar">Miktar:</label></a>
+        <input type="number" id="miktar" name="miktar" step="0.01" required>
+        <button type="submit">Dönüştür!</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>Created by Ibrahim Üstüner</p>
+</div>
+<div class="Sonuc">
+  <a>Dönüştürme Sonucu  =   </a>
+<p>{{ miktar }} {{ cevrilen_doviz }}</p>
+</div>
+    <br>
+</body>
+</html>

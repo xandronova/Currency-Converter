@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Döviz Dönüştürme Uygulaması</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body{
+    background-image: url('/static/newwallpaper2.jpg');
+    background-size: cover;
+}
+      </style>
+</head>
+<body>
+    <div class="no1">
+    <h1>Döviz Dönüştürme Uygulaması</h1>
+    <form action="/convert" method="post">
+        <label for="ilk_doviz">Dönüştürmek İstediğiniz Para Birimi:</label>
+        <input type="text" id="ilk_doviz" name="ilk_doviz" required>
+        <br>
+        <label for="cevrilen_doviz">Hedef Para Birimi:</label>
+        <input type="text" id="cevrilen_doviz" name="cevrilen_doviz" required>
+        <br>
+        <label for="miktar">Miktar:</label>
+        <input type="text" id="miktar" name="miktar" required>
+        <br>
+        <button type="submit">Dönüştür</button>
+    </form>
+    <a href="/">Ana Sayfa</a>
+</div>
+</body>
+</html>
