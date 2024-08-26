@@ -174,12 +174,42 @@ button:active {
     margin: 20px; /* Kutu ile diğer öğeler arasındaki boşluk */
     border-radius: 10px; /* Köşeleri yuvarlatmak için */
     color: #ffffff;}
-.no1{
+
+.no1 .anasayfadonus a{
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #ffffff;
     user-select: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    font-size: 30px;
+    margin-top: 400px;
+    background-color: #ff6e00;
 }
-
+.no1 {
+    display: flex;
+    justify-content: center; /* Yatay olarak ortala */
+    align-items: center;     /* Dikey olarak ortala */
+    padding-left: 160px;
+    user-select: none;
+    font-size:50px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.buton2{
+    width: 17%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff6e00;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
