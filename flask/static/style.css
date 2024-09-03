@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: center; /* Yatay olarak ortala */
     align-items: center;     /* Dikey olarak ortala */
-    padding-top: 15px;       /* Metni biraz aşağıya kaydır */
+    padding-top: 15px;       /* Metni biraz aşağıya kaydırır. */
     padding-left: 160px;
     color: #ff6e00;
     user-select: none;
