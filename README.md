@@ -7,11 +7,11 @@ Bu proje, Python ve Flask kullanılarak geliştirilmiş bir döviz dönüştür�
 - Bir para biriminden diğerine istenen miktarda dönüşüm yapabilme.
 - Birden fazla para birimini destekler.
 - Kolay entegrasyon için REST API sağlar.
+- REST API sağlayıcısı fixer.io'dur.
 
 ## Gereksinimler
 
 - Python 3.7+ yüklü olmalıdır.
 - Flask ve gerekli diğer bağımlılıkları yüklemek için aşağıdaki komutları çalıştırın:
-
 ```bash
 pip install -r requirements.txt
